@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Hero</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap 5.0.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Mi estilo-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/ico" href="assets/img/favicon.ico">
+</head>
+<body>
+    <!-- Header basico con logo -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/sh2.jpg" alt="logo" width="80" height="80" class="navbarImg me-5">
+                    <p class="header d-inline-block position-absolute top-50 start-5 translate-middle-y">Super Hero</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección con form para ingresar los datos que llamaremos de la api -->
+    <section class="section_container1">
+        <img class="section_main-img" src="assets/img/sh1.jpg" alt="logo-superhero">
+        <h1>Encuentra tu Super Hero</h1>
+        <p>Ingresa el número del Super Hero a buscar</p>
+        <form id="formulario">
+            <input type="number" id="heroInput">
+            <div id="error"></div>
+            <button type="submit" class="btn section_button">Buscar</button>
+        </form>
+    </section>
+
+    <br>
+
+    <!-- Sección con BS card que muestra los datos de la api -->
+    <section class="container superCard">
+        <div class="card" style="width: 1100px;">
+            <div class="cardInnerBorder">
+                <div class="row no-gutters">
+
+                    <div class="col-12 col-md-3">
+                        <img id="superCardImg" src="assets/img/unknown-character.png" class="card-img-top" alt="...">
+                        <h5 id="heroName" class="card-title">Super Hero Name</h5>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <ul class="list-group list-group-flush">
+                            <li id="heroConections" class="list-group-item">Connections</li>
+                            <li id="heroPublisher" class="list-group-item">Publisher</li>
+                            <li id="heroOccupation" class="list-group-item">Occupation</li>
+                            <li id="heroFirstAppearance" class="list-group-item">First Appearance</li>
+                            <li id="heroHeight" class="list-group-item">Height</li>
+                            <li id="heroWeight" class="list-group-item">Weight</li>
+                            <li id="heroAliases" class="list-group-item">Aliases</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div id="chartContainer"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <br>
+    
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Canvas JS-->
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--Mi Script-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

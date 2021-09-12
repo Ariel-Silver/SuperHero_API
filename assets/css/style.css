@@ -1,0 +1,61 @@
+/* CSS  */
+.header {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.section_container1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section_main-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.section_button {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: 3px solid black;
+}
+
+#heroName {
+    text-align: center;
+    padding-right: .6em;
+}
+
+#superCardImg {
+    width: 240px;
+    height: 320px;
+    margin-top: 2.3em;
+    margin-left: 1.3em;
+    margin-right: auto;
+    border: solid black 5px;
+    border-radius: 8%;
+}
+
+.card {
+    padding: 1em;
+    border: 2px solid black;
+}
+
+.inputIdError {
+    color: red;
+}
+
+p {
+    font-weight: bold;
+}
+
